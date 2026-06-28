@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "y ddf",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 110.4, "left": 9.1, "attrs": {} },
+    {
+      "type": "wokwi-rgb-led",
+      "id": "rgb1",
+      "top": 32.8,
+      "left": 20.3,
+      "attrs": { "common": "cathode" }
+    }
+  ],
+  "connections": [
+    [ "rgb1:G", "nano:10", "green", [ "v0" ] ],
+    [ "rgb1:R", "nano:9", "green", [ "v19.2", "h28.8" ] ],
+    [ "rgb1:B", "nano:11", "green", [ "v0", "h11.2", "v-48", "h-48", "v76.8", "h19.2" ] ],
+    [ "rgb1:COM", "nano:GND.2", "green", [ "v9.2", "h86.5" ] ]
+  ],
+  "dependencies": {}
+}
